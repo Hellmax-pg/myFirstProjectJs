@@ -25,7 +25,7 @@ if (num < 19) {
     default:
         console.log("Что-то пошло не так!");
         break;
-}  ТАК НЕ РАБОТАЕТ */
+}  ТАК НЕ РАБОТАЕТ, условий в case быть не может */
 
 // Ниже пример с выводом prompt значения в консоль через else if
 
@@ -87,9 +87,21 @@ for (let i = 1; i <= 9; i++) {
 // Циклы while do
 
 let i = 1;
-let n = 1;
+
 do {
-    n = i * i;
+    let n = i * i;
     i++;
     console.log(n);
 } while (i <= 9);
+
+// Функции
+
+function getBiggerNumber (number1, number2) {
+    if (number1 > number2) {
+        return number1;
+    } else {
+        return number2;
+    }
+}
+
+console.log(getBiggerNumber(5,4));
